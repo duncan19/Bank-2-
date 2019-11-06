@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Address Book</title>
+  <title></title>
+</head>
+<body>
+  <div class="container">
+    <h1>Banking</h1>
+    <form id="new-account">
+
+      <div class="initialDiv">
+
+        <div class="form-group">
+          <label for="input-name">Name</label>
+          <input class="form-control" type="text" id="input-name">
+        </div>
+        <div class="form-group">
+          <label for="input-initial-deposit">Initial Deposit</label>
+          <input class="form-control" type="text" id="input-initial-deposit">
+        </div>
+        <button type="submit" id="open-account">Open Account</button>
+      </div>
+
+
+      <div class="middleDiv">
+      <div class="form-group">
+        <label for="deposit-amount">Deposit Amount:</label>
+        <input class="form-control" type="number" id="deposit-amount" value="0" REQUIRED>
+      </div>
+      <div class="form-group">
+        <label for="withdrawl-amount">Withdrawl Amount</label>
+        <input class="form-control" type="number" id="withdrawl-amount" value="0" REQUIRED>
+      </div>
+      <button type="button" id="trans-btn">complete transaction</button>
+    </form>
+  </div>
+
+    <HR>
+    <div class="card text-center">
+      <div class="card-header">
+        Money in the bank
+      </div>
+      <div class="card-body">
+        <p><span class="display-name"></span> you have :</p>
+        <span class="display-money"></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
